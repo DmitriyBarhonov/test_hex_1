@@ -1,12 +1,6 @@
 import axios from "axios";
 import qs from "qs"
 
-// const instance = axios.create({
-//     withCredentials: true,
-//     baseURL: `http://79.143.31.216/`,
-// })
-
-
 export const registerAPI = (username, password) => {
     return axios({
         method: "post",
@@ -14,11 +8,6 @@ export const registerAPI = (username, password) => {
     })
 
 }
-
-// const govno = {
-//     "username": "username",
-//     "password": "password"
-// }
 
 
 export const loginAPI = (dataLogin) => {
